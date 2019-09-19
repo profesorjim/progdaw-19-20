@@ -1,3 +1,4 @@
+rm -f -R *.class
 git add . --all
 git commit -m "actualizacion"
 git push origin master
