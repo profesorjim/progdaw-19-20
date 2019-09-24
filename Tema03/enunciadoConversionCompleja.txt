@@ -1,0 +1,8 @@
+MB,kB,B
+
+Dada una cantidad en Bytes, conviértase a "forma compleja",
+expresando su equivalencia en MB,kB y B.
+
+Ejemplo:
+
+45896 B =   ????? MB + ¿¿¿¿ kb + #### B
