@@ -14,7 +14,7 @@ public class ecoScanner {
     System.out.println("Este programa repite como un loro la frase entera. Introduzca texto: ");
     captura = x.nextLine();
     System.out.println(captura);
-    
+  
   }
 
 }
