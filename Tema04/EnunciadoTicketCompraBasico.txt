@@ -4,4 +4,4 @@ Una vez recogidos los datos, el programa deberá realizar los cálculos necesari
 
 En dicho ticket se detallará el nombre de cada producto, la cantidad, el precio y el importe correspondiente al IVA de cada producto (un producto por línea). Después, se deberá indicar el importe total (sin IVA) y la cantidad correspondiente al IVA. Finalmente, deberá mostrarse el precio final con iva incluido.
 
-El programa deberá presentar alineados a la izquierda los nombres de los productos, y alineados a la derecha las cantidades de producto, precios y cantidades asociadas al IVA. Los precios deberán mostrarse siempre con 2 decimales (céntimos de Euro).
+El programa deberá presentar alineados a la izquierda los nombres de los productos, y alineados a la derecha (en columnas) las cantidades de producto, precios y cantidades asociadas al IVA. Los precios deberán mostrarse siempre con 2 decimales (céntimos de Euro).
