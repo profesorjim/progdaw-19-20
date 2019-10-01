@@ -1,4 +1,4 @@
-public class EjemploPrecision {
+public class EjemploPrecisionConFormato {
   public static void main (String[] args) {
     long cantidad1;
     long cantidad2;
@@ -18,8 +18,11 @@ public class EjemploPrecision {
     
     System.out.println("La diferencia entre ambas cantidades es: "+diferencia/100.0);
     
-        
-    System.out.printf("La diferencia entre ambas cantidades es: %.2f\n",diferencia/100.0);
+    int decimales = 4;
+    String patata = String.format("La diferencia entre ambas cantidades es: %%.%df\n",decimales);
+    // "La diferencia entre ambas cantidades es: %.2f\n"
+    
+    System.out.printf(patata,diferencia/100.0);
     
     
   }
