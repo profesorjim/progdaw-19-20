@@ -10,8 +10,12 @@ Clonar el respositorio desde GitHub a local
 git clone https://github.com/<nombredeusuario>/<nombreReposit>
 git clone https://github.com/profesorjim/pruebadehoy2
 
-Actualiza el respositorio (desde local a GitHub)
+Actualiza el repositorio (desde local a GitHub)
 
 git add . --all
 git commit -m "actualizacion"
 git push origin master
+
+Actualiza el respositorio (desde GitHub a local)
+
+git pull
