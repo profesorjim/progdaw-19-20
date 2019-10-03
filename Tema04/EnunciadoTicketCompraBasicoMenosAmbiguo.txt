@@ -1,0 +1,13 @@
+Realizar un programa en Java que solicite interactivamente el nombre, la cantidad y el precio por unidad (sin IVA) de 4 productos, así como el tipo de IVA aplicado a cada uno de ellos.
+
+Una vez recogidos los datos, el programa deberá realizar los cálculos necesarios para mostrar por pantalla un Ticket de la compra.
+
+En dicho ticket se detallará el nombre de cada producto, la cantidad, el precio por unidad (sin IVA), el precio parcial correspondiente a la cantidad de este producto (sin IVA) y el importe correspondiente al IVA de la cantidad de este producto, presentando la información de cada producto en una línea.
+
+El programa deberá presentar alineados a la izquierda los nombres de los productos, y alineados a la derecha (en columnas) las cantidades de producto, precios y e importes asociados al IVA. 
+
+Después, se deberá indicar el importe total (sin IVA) correspondiente a la totalidad de todos los productos adquiridos y el importe total correspondiente al IVA de todos los productos adquiridos. 
+
+Finalmente, deberá mostrarse el precio final con iva incluido correspondiente a toda la compra realizada.
+
+Los precios deberán mostrarse siempre con 2 decimales (céntimos de Euro).
