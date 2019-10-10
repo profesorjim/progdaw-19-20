@@ -7,4 +7,4 @@
  * * * * *
 * * * * * *
 
-2.- Reescribir los programas que dibujan pirámides, de manera que para pintar cada una de las líneas no se utilicen bucles para los espacios en blanco que preceden a los caracteres de la pirámide.
+2.- Reescribir los programas que dibujan pirámides, de manera que para pintar cada una de las líneas no se utilicen bucles para los espacios en blanco que preceden a los caracteres de la pirámide. Pista: Hay que usar la función String.format para generar una cadena de caracteres que contenga el formato que queremos usar en System.out.printf.
