@@ -1,0 +1,8 @@
+1.- Escribir un programa que dibuje una pirámide cuya altura y carácter para pintar vengan recogidos por consola de manera interactiva. La pirámide tendrá el siguiente aspecto:
+
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+* * * * * *
