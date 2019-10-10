@@ -27,4 +27,5 @@
 		 valores entre los que se encuentra el número
 		 a adivinar, e irá informado "de lo que pueda"
 		 conforme se vayan introduciendo valores
-		 inferiores y/o superiores al número a adivinar.
+		 inferiores y/o superiores al número a
+		 adivinar.
