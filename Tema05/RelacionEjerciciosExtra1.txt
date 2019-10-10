@@ -9,7 +9,24 @@
 
 2.- Reescribir los programas que dibujan pirámides, de manera que para pintar cada una de las líneas no se utilicen bucles para los espacios en blanco que preceden a los caracteres de la pirámide. Pista: Hay que usar la función String.format para generar una cadena de caracteres que contenga el formato que queremos usar en System.out.printf.
 
-3.- Escribir un programa que "ayude" a adivinar un número entero. Para ello, el programa irá haciendo reiteradamente lo siguiente (hasta que se adivine el número):
+3.- Escribir un programa que "ayude" a adivinar un número entero, el cual estará necesariamente comprendido entre los valores 0 y 10000. Para ello, el programa irá haciendo reiteradamente lo siguiente (hasta que se adivine el número):
+	- Pedirá que se introduzca un número entero.
+	- El programa informará si se ha adivinado o no.
+		*En caso de adivinarse, el programa informará
+		 de este hecho y finalizará.
+		*En caso de que no se haya adivinado, el
+		 programa informará al usuario de si el
+		 número introducido es mayor o menor que
+		 el número a adivinar. Asímismo, informará
+		 de los valores introducidos hasta el momento
+		 entre los cuales queda el número a adivinar
+		 (valores inferior y superior más cercanos al
+		 número de todos los valores que se han ido
+		 introduciendo). Ojo: inicialmente, se
+		 informará que el número a adivinar está entre
+		 los valores 0 y 10000.
+
+4.- Escribir un programa que "ayude" a adivinar un número entero. Para ello, el programa irá haciendo reiteradamente lo siguiente (hasta que se adivine el número):
 	- Pedirá que se introduzca un número entero.
 	- El programa informará si se ha adivinado o no.
 		*En caso de adivinarse, el programa informará
