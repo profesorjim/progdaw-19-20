@@ -22,4 +22,9 @@
 		 entre los cuales queda el número a adivinar
 		 (valores inferior y superior más cercanos al
 		 número de todos los valores que se han ido
-		 introduciendo).
+		 introduciendo). Ojo: inicialmente, el
+		 programa no podrá informar sobre los dos
+		 valores entre los que se encuentra el número
+		 a adivinar, e irá informado "de lo que pueda"
+		 conforme se vayan introduciendo valores
+		 inferiores y/o superiores al número a adivinar.
