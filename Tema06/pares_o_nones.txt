@@ -1,0 +1,2 @@
+Implemente un programa para jugar a "PARES O NONES".
+El programa elegirá aleatoriamente entre PARES y NONES, dejándonos a nosotros la opción que él no elija. A continuación, el programa elegirá aleatoriamente un número entre 0 y 10. El programa nos preguntará por nuestro número que también oscilará entre 0 y 10. Tras indicar nuestro número, el programa ha de revelar su número, e informarnos de quién ha ganado. Gana aquel (máquina o jugador) que haya elegido la misma paridad (PAR o IMPAR) que la del resultado de la suma de los dos valores.
