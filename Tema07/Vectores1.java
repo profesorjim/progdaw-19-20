@@ -27,7 +27,7 @@ public class Vectores1 {
     
     for (int i=0; i<tamanio; i++) {
       System.out.print("Introduce el dato nº "+(i+1)+": ");
-      vector[i] = Integer.parseInt(System.console().readLine());___
+      vector[i] = Integer.parseInt(System.console().readLine());
     }
     
     System.out.print("Los datos introducidos han sido: ");
