@@ -1,6 +1,6 @@
-package Clases02;
+package Clases03;
 
-public class Profesor01 extends Persona01 {
+public class Profesor01 extends Persona01 implements Tareas {
   
   int numModulos;
   
@@ -22,6 +22,16 @@ public class Profesor01 extends Persona01 {
     String resultado = super.toString();
     resultado = resultado + "Módulos en los que da clase: " + this.numModulos +"\n";
     return resultado;
+  }
+  
+  //@Override
+  public void trabajarMas () {
+    this.numModulos++;
+  }
+  
+  //@Override
+  public void trabajarMenos () {
+    this.numModulos = this.numModulos>0?this.numModulos-1:0;
   }
   
 }
