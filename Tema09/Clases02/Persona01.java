@@ -1,7 +1,7 @@
-package Clases01;
+package Clases02;
 
 
-public class Persona01 {
+public  class Persona01 {
   private String nombre;
   private String DNI;
   private int edad;
