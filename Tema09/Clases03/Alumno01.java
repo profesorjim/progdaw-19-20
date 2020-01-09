@@ -22,12 +22,12 @@ public class Alumno01 extends Persona01 implements Tareas {
     return resultado;
   }
   
-  //@Override
+  @Override
   public void trabajarMas () {
     this.notaMedia = this.notaMedia<10?this.notaMedia+1:10;
   }
   
-  //@Override
+  @Override
   public void trabajarMenos () {
     this.notaMedia = this.notaMedia>0?this.notaMedia-1:0;
   }

@@ -24,12 +24,12 @@ public class Profesor01 extends Persona01 implements Tareas {
     return resultado;
   }
   
-  //@Override
+  @Override
   public void trabajarMas () {
     this.numModulos++;
   }
   
-  //@Override
+  @Override
   public void trabajarMenos () {
     this.numModulos = this.numModulos>0?this.numModulos-1:0;
   }
