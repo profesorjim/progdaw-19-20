@@ -1,0 +1,11 @@
+Implemente la clase Pirámide, la cual servirá para crear pirámides (macizas y que apunten hacia arriba) de una determinada altura, la cual oscilará entre 1 y 12 (ambos incluidos).
+
+Debe decidir qué informaciones (atributos) son necesarias para su modelado, sabiendo que debe implementar las siguientes acciones (métodos) sobre las instancias de esta clase:
+
+- Constructor, al cual se le pasará la altura inicial y el carácter con el que se desea "pintar" la pirámide
+- Aumentar, cuyo efecto será el de "hacer crecer" la pirámide en una fila, con la condición de que la altura de la pirámide no supere los 12 caracteres.
+- Disminuir, cuyo efecto será el de "hacer decrecer" la pirámide en una fila, con la condición de que la altura de la pirámide no llegue a ser inferior a 1 carácter.
+- CambiarDibujo, al cual se le pasará el carácter con el que se quiere dibujar la pirámide a partir de este momento.
+- toString, el cual devolverá en un String el "dibujo de la pirámide".
+
+Debe crear, además, un programa principal de prueba para esta clase, en la que se hagan uso de estos métodos.
