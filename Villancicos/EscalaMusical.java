@@ -39,15 +39,15 @@ public class EscalaMusical{
   public static void tocarNota (int octava, String nota, String figura, int velocidad) 
   throws Exception
   {
-    String notas[] = {      "dob", "do", "do#", "reb","re", "re#","mib","mi","mi#","fab", "fa","fa#","solb","sol","sol#","lab","la","la#","sib","si","si#"};
+    String tonos[] = {      "dob", "do", "do#", "reb","re", "re#","mib","mi","mi#","fab", "fa","fa#","solb","sol","sol#","lab","la","la#","sib","si","si#"};
     int semitonosAlLa [] = {-10,   -9,   -8,    -8,   -7,   -6,   -6,   -5,  -4,  -5,     -4,   -3,   -3,   -2,   -1,     -1,   0,    1,  1,    2,    3};
     
     String figuras[] = {"cuadrada","redonda","redondaP","blanca","blancaP","negra","negraP","corchea","corcheaP","semicorchea","semicorcheaP","fusa","fusaP","semifusa","semifusaP"};
     int duracion[] =  {256,128,192,64,96,32,48,16,24,8,12,4,6,2,3};
     
     int pos=-1;
-    for (int i=0; i<notas.length; i++) {
-      if (notas[i].equals(nota)) {
+    for (int i=0; i<tonos.length; i++) {
+      if (tonos[i].equals(nota)) {
         pos = i;
       }
     }
@@ -78,16 +78,16 @@ public class EscalaMusical{
     
     String escala[] = {"do","re","mi","fa","sol","la","si"};
     
-    int octavas[] = {5,5,5,5,5,5,5,6};
-    String notas[] = {"do","re","mi","fa","sol","la","si","do"};
-    String figuras[] = {"negra","negra","negra","negra","negra","negra","negra","negra"};
+    int octavasNotas[] = {5,5,5,5,5,5,5,6};
+    String tonosNotas[] = {"do","re","mi","fa","sol","la","si","do"};
+    String figurasNotas[] = {"negra","negra","negra","negra","negra","negra","negra","negra"};
   
     
   
    
     
-    for (int i=0; i<notas.length; i++) {
-      tocarNota (octavas[i],notas[i],figuras[i],8);
+    for (int i=0; i<tonosNotas.length; i++) {
+      tocarNota (octavasNotas[i],tonosNotas[i],figurasNotas[i],8);
     }
     
  
