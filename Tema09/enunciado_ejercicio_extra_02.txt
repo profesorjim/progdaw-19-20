@@ -1,0 +1,13 @@
+Reimplemente el programa que genera música por tonos, situado en la carpeta Musica de este repositorio, haciendo uso de:
+
+- La clase nota
+- El tipo enumerado tono
+- El tipo eunmerado figura
+
+Los objetos de la clase nota deben contener, como características, las siguientes:
+- Tono
+- Figura
+- Octava (que es un valor entero)
+
+Debe implementar un método "suena", que aplicado sobre un objeto nota, haga que suene por el altavoz.
+Debe implementar también el método toString, el cual, aplicado sobre un objeto nota, devolverá, separados por guiones, el tono, la figura y la octava de dicha nota.
