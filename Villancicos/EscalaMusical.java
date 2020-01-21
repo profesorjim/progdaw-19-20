@@ -87,7 +87,7 @@ public class EscalaMusical{
    
     
     for (int i=0; i<tonosNotas.length; i++) {
-      tocarNota (octavasNotas[i],tonosNotas[i],figurasNotas[i],6);
+      tocarNota (octavasNotas[i],tonosNotas[i],figurasNotas[i],4);
     }
     
  
