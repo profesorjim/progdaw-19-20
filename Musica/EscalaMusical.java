@@ -2,7 +2,7 @@ import javax.sound.sampled.*;
 
 public class EscalaMusical{
 
-  public static float SAMPLE_RATE = 8000f;
+  public static final float SAMPLE_RATE = 8000f;
 
   public static void tone(int hz, int msecs) 
      throws LineUnavailableException 
