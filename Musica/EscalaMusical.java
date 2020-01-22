@@ -30,8 +30,8 @@ public class EscalaMusical{
       sdl.write(buf,0,1);
     }
     sdl.drain();
-    sdl.stop();
-    sdl.close();
+    //sdl.stop();
+    //sdl.close();
   }
   
   
@@ -87,7 +87,7 @@ public class EscalaMusical{
    
     
     for (int i=0; i<tonosNotas.length; i++) {
-      tocarNota (octavasNotas[i],tonosNotas[i],figurasNotas[i],4);
+      tocarNota (octavasNotas[i],tonosNotas[i],figurasNotas[i],10);
     }
     
  
