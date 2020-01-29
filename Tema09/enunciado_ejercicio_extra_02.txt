@@ -11,3 +11,12 @@ Los objetos de la clase nota deben contener, como características, las siguient
 
 Debe implementar un método "suena", que aplicado sobre un objeto nota, haga que suene por el altavoz.
 Debe implementar también el método toString, el cual, aplicado sobre un objeto nota, devolverá, separados por guiones, el tono, la figura y la octava de dicha nota.
+
+===============
+
+AMPLIACIÓN
+
+Es posible crear tipos enumerados en los que se pueden añadir características. Y es posible, por tanto, definir una especie
+de objetos constantes dentro de ese tipo enumerado. En realidad, un tipo enumerado es una clase especial para Java.
+
+Se recompensará a quien (o quienes) sean capaces de montar tipos enumerados para el tono y la figura de las notas musiacales, en los que el salto de semitonos al LA o la duración de la figura se obtenga a partir del valor del valor-objeto del tipo enumerado.
