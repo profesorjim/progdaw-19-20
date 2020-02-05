@@ -12,8 +12,13 @@ public class Ejemplo1 {
     System.out.println("El resultado de "+a+" + "+b+" es: "+Suma(a,b));
     System.out.println("El resultado de "+a+" - "+b+" es: "+Resta(a,b));
     
-    System.out.println("El resultado de "+a+" + "+b+" es: "+Operar((int x, int y) -> x+y));
-    System.out.println("El resultado de "+a+" - "+b+" es: "+Operar((int x, int y) -> x-y));
+    IFuncionLambda f1 = (n,m) -> n+m;
+    IFuncionLambda f2 = (n,m) -> n-m;
+    
+    System.out.println("El resultado de "+a+" + "+b+" es: "+f1.Operar(a,b));
+    System.out.println("El resultado de "+a+" - "+b+" es: "+f2.Operar(a,b));
+    
+
     
     
   }
@@ -26,7 +31,5 @@ public class Ejemplo1 {
     return a-b;
   }
   
-  public static int Operar (Function f) {
-    return f.apply();
-  }
+ 
 }
