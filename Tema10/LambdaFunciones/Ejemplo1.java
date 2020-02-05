@@ -19,9 +19,11 @@ public class Ejemplo1 {
     System.out.println("El resultado de "+a+" + "+b+" es: "+f1.Operar(a,b));
     System.out.println("El resultado de "+a+" - "+b+" es: "+f2.Operar(a,b));
     
-    System.out.println("El resultado de "+a+" + "+b+" es: "+Operando(a,b,(a,b) -> a+b));
-    System.out.println("El resultado de "+a+" - "+b+" es: "+Operando(a,b,(a,b) -> a-b));
+    System.out.println("El resultado de "+a+" + "+b+" es: "+Operando(a,b,(c,d) -> c+d));
+    System.out.println("El resultado de "+a+" - "+b+" es: "+Operando(a,b,(c,d) -> c-d));
     
+    System.out.println("El resultado de "+a+" + "+b+" es: "+Operando(a,b,f1));
+    System.out.println("El resultado de "+a+" - "+b+" es: "+Operando(a,b,f2));
     
     
   }
