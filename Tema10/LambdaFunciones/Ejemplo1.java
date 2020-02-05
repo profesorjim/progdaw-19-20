@@ -15,10 +15,13 @@ public class Ejemplo1 {
     IFuncionLambda f1 = (n,m) -> n+m;
     IFuncionLambda f2 = (n,m) -> n-m;
     
+    
     System.out.println("El resultado de "+a+" + "+b+" es: "+f1.Operar(a,b));
     System.out.println("El resultado de "+a+" - "+b+" es: "+f2.Operar(a,b));
     
-
+    System.out.println("El resultado de "+a+" + "+b+" es: "+Operando(a,b,(a,b) -> a+b));
+    System.out.println("El resultado de "+a+" - "+b+" es: "+Operando(a,b,(a,b) -> a-b));
+    
     
     
   }
@@ -29,6 +32,10 @@ public class Ejemplo1 {
   
   public static int Resta (int a, int b) {
     return a-b;
+  }
+  
+  public static int Operando (int a, int b, IFuncionLambda patata) {
+    return patata.Operar(a,b);
   }
   
  
