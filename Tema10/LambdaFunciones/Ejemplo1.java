@@ -12,8 +12,8 @@ public class Ejemplo1 {
     System.out.println("El resultado de "+a+" + "+b+" es: "+Suma(a,b));
     System.out.println("El resultado de "+a+" - "+b+" es: "+Resta(a,b));
     
-    IFuncionLambda f1 = (n,m) -> n+m;
-    IFuncionLambda f2 = (n,m) -> n-m;
+    IOperacionLambda f1 = (n,m) -> n+m;
+    IOperacionLambda f2 = (n,m) -> n-m;
     
     
     System.out.println("El resultado de "+a+" + "+b+" es: "+f1.Operar(a,b));
@@ -36,7 +36,7 @@ public class Ejemplo1 {
     return a-b;
   }
   
-  public static int Operando (int a, int b, IFuncionLambda patata) {
+  public static int Operando (int a, int b, IOperacionLambda patata) {
     return patata.Operar(a,b);
   }
   

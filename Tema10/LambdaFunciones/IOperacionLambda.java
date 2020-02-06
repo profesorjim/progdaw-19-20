@@ -1,4 +1,4 @@
 @FunctionalInterface
-public interface IFuncionLambda {
+public interface IOperacionLambda {
   public int Operar (int x, int y);
 }
