@@ -14,6 +14,7 @@
   <body>
     <h1>Procesamiento información recibida</h1>
     <% request.setCharacterEncoding("UTF-8"); %>
-    La frase introducida anteriormente (tengo buena memoria) es: <% out.print(request.getParameter("frase1")); %>
+    La frase introducida anteriormente (tengo buena memoria) es: <% out.print(request.getParameter("frase2")); %><br><p>
+    <a href="formulario1.jsp">Volver</a>
   </body>
 </html>

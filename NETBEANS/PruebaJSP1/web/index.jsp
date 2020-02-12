@@ -13,6 +13,8 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <a href="calculadoraInput.jsp">Calculadora</a><br>
+        <a href="calculadoraInput2.jsp">Calculadora2</a><br>
         <% 
           int tope = (int)(Math.random()*10 +5);
           for (int i=0 ; i<tope ;  i++) {
