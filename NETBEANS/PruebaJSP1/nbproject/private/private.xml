@@ -5,15 +5,7 @@
         <group name="NETBEANS-19-20">
             <file>file:/home/tux/progdaw/NETBEANS/PruebaJSP1/nbproject/build-impl.xml</file>
         </group>
-        <group>
-            <file>file:/home/tux/javatest/progdaw/NETBEANS/PruebaJSP1/web/calcular2.jsp</file>
-            <file>file:/home/tux/javatest/progdaw/NETBEANS/PruebaJSP1/web/calculadoraInput2.jsp</file>
-            <file>file:/home/tux/javatest/progdaw/NETBEANS/PruebaJSP1/web/index.jsp</file>
-        </group>
-        <group name="NETBEANS">
-            <file>file:/home/tux/javatest/progdaw/NETBEANS/PruebaJSP1/web/calculadoraInput2.jsp</file>
-            <file>file:/home/tux/javatest/progdaw/NETBEANS/PruebaJSP1/web/calcular2.jsp</file>
-            <file>file:/home/tux/javatest/progdaw/NETBEANS/PruebaJSP1/web/index.jsp</file>
-        </group>
+        <group/>
+        <group name="NETBEANS"/>
     </open-files>
 </project-private>
