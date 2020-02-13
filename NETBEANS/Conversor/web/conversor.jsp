@@ -18,7 +18,11 @@
         double factor=166.386;
         String cadena1,cadena2,cadenaResultado;
         request.setCharacterEncoding("UTF-8");
-        valor = Double.parseDouble(request.getParameter("cantidad"));
+        if (request.getParameter("cantidad").equals("")) {
+          valor = 0;
+        } else {
+          valor = Double.parseDouble(request.getParameter("cantidad"));
+        }
         if (request.getParameter("tipoConversion").equals("p")) {
           resultado = valor*factor;
           cadena1 = "€";
