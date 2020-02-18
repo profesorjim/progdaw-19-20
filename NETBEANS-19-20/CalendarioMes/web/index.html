@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Generador de calendario mensual</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div>Indique la fecha cuyo mes desea visualizar:</div>
+    <form method="post" action="calendario.jsp">
+      <input type="number" size="2" min="1" max="31" name="dia"> -
+      <input type="number" size="2" min="1" max="12" name="mes"> -
+      <input type="number" size="4" min="1900" max="2100" name="anio">
+      <br>
+      <input type="submit" value="Visualizar calendario del mes" name="submit1">
+      <input type="submit" value="Visualizar2 calendario del mes" name="submit2" onclick="this.form.action='calendario2.jsp'">
+    </form>
+  </body>
+</html>
