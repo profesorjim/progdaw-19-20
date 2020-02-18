@@ -7,93 +7,16 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
+
+
 <%
   request.setCharacterEncoding("UTF-8");
   int dia = Integer.parseInt(request.getParameter("dia"));
   int mes = Integer.parseInt(request.getParameter("mes"));
   int anio = Integer.parseInt(request.getParameter("anio"));
+     
+  int diaSemana = DiaDeLaSemana(dia,mes,anio);
   
-  //dia = 1;
-  
-  int coeficSiglo;
-  int coeficAnio;
-  int coeficBisiesto;
-  int coeficMes;
-  int coeficDia;
-  int resultado;
-  
-  
-  // coeficiente siglo
-    if (anio < 1800) {
-      coeficSiglo = 5;
-    } else if (anio < 1900) {
-      coeficSiglo = 3;
-    } else if (anio < 2000) {
-      coeficSiglo = 1;
-    } else if (anio < 2100) {
-      coeficSiglo = 0;
-    } else if (anio < 2200) {
-      coeficSiglo = -2;
-    } else {
-      coeficSiglo = -4;
-    }
-    
-    //coeficiente año
-    coeficAnio = anio % 100;
-    coeficAnio += coeficAnio/4;
-    
-    //coeficiente bisiesto
-    if ((((anio % 4 == 0) && (anio % 100 !=0)) || (anio % 400 == 0)) && (mes>=1) && (mes<=2)){
-      coeficBisiesto = -1;
-    } else {
-      coeficBisiesto = 0;
-    }
-
-    
-    
-    coeficMes=-1000;
-    //coeficiente mes
-    switch (mes) {
-      case 1:
-      case 10:
-        coeficMes = 6;
-        break;
-      case 2:
-      case 3:
-      case 11:
-        coeficMes = 2;
-        break;
-      case 4:
-      case 7:
-        coeficMes = 5;
-        break;
-      case 5:
-        coeficMes = 0;
-        break;
-      case 6:
-        coeficMes = 3;
-        break;
-      case 8:
-        coeficMes = 1;
-        break;
-      case 9:
-      case 12:
-        coeficMes = 4;
-        break;
-      default:
-    }
-    
-    // valor coeficiente día
-    coeficDia = dia;
-    
-    // sumamos y hacemos resto div. 7
-    
-    resultado = coeficSiglo + coeficAnio + coeficBisiesto + coeficMes + coeficDia;
-    resultado %= 7;
-    
-    resultado = (resultado + 7 -1) %7;
-    
-    
     int totalDiasMes;
     boolean esBisiesto = (((anio % 4 == 0) && (anio % 100 !=0)) || (anio % 400 == 0))?true:false;
     
@@ -136,10 +59,10 @@
       </tr>
       <%
         
-        int posSemana=resultado;
+        int posSemana=diaSemana;
         out.print("<tr>");
-        if (resultado > 0) {
-          out.print("<td colspan="+resultado+"></td>");      
+        if (diaSemana > 0) {
+          out.print("<td colspan="+diaSemana+"></td>");      
         }
         
         for (int i = 1; i<=totalDiasMes; i++) {
@@ -163,3 +86,105 @@
   </body>
 </html>
 
+<%!
+  // BATERÍA DE FUNCIONES AUXILIARES
+  
+  public static int CoeficienteSiglo(int anio) {
+    // coeficiente siglo
+    int coeficSiglo;
+
+    if (anio < 1800) {
+      coeficSiglo = 5;
+    } else if (anio < 1900) {
+      coeficSiglo = 3;
+    } else if (anio < 2000) {
+      coeficSiglo = 1;
+    } else if (anio < 2100) {
+      coeficSiglo = 0;
+    } else if (anio < 2200) {
+      coeficSiglo = -2;
+    } else {
+      coeficSiglo = -4;
+    }
+    return coeficSiglo;
+  }
+
+  public static int CoeficienteAnio (int anio) {
+  //coeficiente año
+    int coeficAnio;
+    coeficAnio = anio % 100;
+    coeficAnio += coeficAnio/4;
+    return coeficAnio;
+  }
+  
+  public static int CoeficienteBisiesto (int anio, int mes) {
+    //coeficiente bisiesto  
+    int coeficBisiesto;
+    if ((((anio % 4 == 0) && (anio % 100 !=0)) || (anio % 400 == 0)) && (mes>=1) && (mes<=2)){
+      coeficBisiesto = -1;
+    } else {
+      coeficBisiesto = 0;
+    }
+    return coeficBisiesto;
+  }
+
+  public static int CoeficienteMes (int mes) {
+    int coeficMes=-1000;
+    //coeficiente mes
+    switch (mes) {
+      case 1:
+      case 10:
+        coeficMes = 6;
+        break;
+      case 2:
+      case 3:
+      case 11:
+        coeficMes = 2;
+        break;
+      case 4:
+      case 7:
+        coeficMes = 5;
+        break;
+      case 5:
+        coeficMes = 0;
+        break;
+      case 6:
+        coeficMes = 3;
+        break;
+      case 8:
+        coeficMes = 1;
+        break;
+      case 9:
+      case 12:
+        coeficMes = 4;
+        break;
+      default:
+    }
+    return coeficMes;
+  }
+
+  public static int DiaDeLaSemana (int dia, int mes, int anio) {
+    // 0: domingo 1: lunes 2: martes ... 
+    int coeficSiglo;
+    int coeficAnio;
+    int coeficBisiesto;
+    int coeficMes;
+    int coeficDia;
+    int coeficGlobal;
+
+      
+    coeficSiglo = CoeficienteSiglo(anio);    
+    coeficAnio = CoeficienteAnio(anio);
+    coeficBisiesto = CoeficienteBisiesto(anio,mes);
+    coeficMes = CoeficienteMes(mes);
+    // valor coeficiente día
+    coeficDia = dia;
+    // sumamos y hacemos resto div. 7   
+    
+    coeficGlobal = coeficSiglo + coeficAnio + coeficBisiesto + coeficMes + coeficDia;
+    coeficGlobal %= 7;
+    coeficGlobal = (coeficGlobal + 7 -1) %7;
+    return coeficGlobal;
+  }
+
+%>
