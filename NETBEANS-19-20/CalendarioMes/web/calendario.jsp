@@ -137,7 +137,7 @@
         int dia0 = 1-resultado;
         int posSemana=0;
         out.print("<tr>");
-        for (int i = dia0; i<totalDiasMes; i++) {
+        for (int i = dia0; i<=totalDiasMes; i++) {
           if(posSemana == 7) {
             out.println("</tr>");
             out.print("<tr>");

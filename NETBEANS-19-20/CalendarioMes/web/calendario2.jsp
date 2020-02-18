@@ -142,7 +142,7 @@
           out.print("<td colspan="+resultado+"></td>");      
         }
         
-        for (int i = 1; i<totalDiasMes; i++) {
+        for (int i = 1; i<=totalDiasMes; i++) {
           if(posSemana == 7) {
             out.println("</tr>");
             out.print("<tr>");
