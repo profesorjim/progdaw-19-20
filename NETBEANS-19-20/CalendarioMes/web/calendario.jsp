@@ -83,7 +83,8 @@
     }
     
     // valor coeficiente día
-    coeficDia = dia;
+    //coeficDia = dia;
+    coeficDia = 1;
     
     // sumamos y hacemos resto div. 7
     

@@ -15,7 +15,7 @@
   int mes = Integer.parseInt(request.getParameter("mes"));
   int anio = Integer.parseInt(request.getParameter("anio"));
      
-  int diaSemana = DiaDeLaSemana(dia,mes,anio);
+  int diaSemana = DiaDeLaSemana(1,mes,anio);
   
     int totalDiasMes;
     boolean esBisiesto = (((anio % 4 == 0) && (anio % 100 !=0)) || (anio % 400 == 0))?true:false;
