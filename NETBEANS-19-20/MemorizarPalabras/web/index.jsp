@@ -19,7 +19,8 @@
       String memoriaPrevia = request.getParameter("memorizado");
       String memoria= "";
       if (dato != null) {
-        memoria = memoriaPrevia + "<br>" + dato;
+        memoria = memoriaPrevia + "<br>"
+                + "" + dato;
       }
     %>
     <form action="index.jsp" method="post">
