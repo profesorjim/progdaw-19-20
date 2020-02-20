@@ -25,7 +25,7 @@
     %>
     <form action="index.jsp" method="post">
       Introduzca palabra/frase a memorizar: <input type="text" name="palabra"><br>
-      <input type="submit" value="Memoriza">
+      <input type="submit" value="Memoriza"> <input type="reset" onclick="this.form.memorizado.value=''; submit()">
       <input type="hidden" name="memorizado" value="<% out.print(memoria); %>">
     </form>
     <%
