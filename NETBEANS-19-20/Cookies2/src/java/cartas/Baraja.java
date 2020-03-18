@@ -9,11 +9,13 @@ import java.util.ArrayList;
  *
  * @author tux
  */
-public class Baraja {
+public class Baraja implements java.io.Serializable {
   private ArrayList<Carta> cartasBaraja;
   
-  
-  public Baraja () {
+  public Baraja(){    
+  }
+   
+  public Baraja (int x) {
     this.cartasBaraja = new ArrayList<Carta>();
     
     for (int i=0; i<4; i++) {
