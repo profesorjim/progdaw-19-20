@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="cartas.Baraja"%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,7 +20,7 @@
           out.println(k.getName()+"-"+k.getValue()+"<br>");
         }
       } else {
-        response.addCookie(new Cookie("baraja1","patata"));
+        response.addCookie(new Cookie("variable1","patata"));
         out.println("Se ha almacenado una cookie");
       }
     %>
