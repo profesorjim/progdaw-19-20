@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author tux
  */
 public class Baraja implements java.io.Serializable {
-  private ArrayList<Carta> cartasBaraja;
+  public ArrayList<Carta> cartasBaraja;
   
   public Baraja(){    
   }

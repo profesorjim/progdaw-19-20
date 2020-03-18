@@ -9,11 +9,12 @@ package cartas;
  *
  * @author tux
  */
-public class Carta implements java.io.Serializable {
-  private String palo;
-  private String valor;
+//public class Carta implements java.io.Serializable {
+public class Carta {
+  public String palo;
+  public String valor;
   
-  public Carta(){
+  public Carta () {
     
   }
   

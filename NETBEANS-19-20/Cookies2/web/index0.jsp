@@ -22,7 +22,7 @@
           out.println(k.getName()+"-"+k.getValue()+"<br>");
           if (k.getName().equals("baraja1")) {
             // extracción y procesamiento del objeto complejo
-            ObjectMapper objetoComplejo = new ObjectMapper();     
+            ObjectMapper objetoComplejo = new ObjectMapper(); 
             Baraja baraja2 = objetoComplejo.readValue(k.getValue(),Baraja.class) ;
             // ya tenemos el objeto; podemos volcarlo por pantalla ...
             out.println("La baraja es:<br>");
@@ -35,6 +35,7 @@
         // conversion a JSON
         ObjectMapper mapper = new ObjectMapper();
         String baraja1comoString = mapper.writeValueAsString(baraja1);
+        
         
         Cookie cookie = new Cookie("baraja1",baraja1comoString);
         cookie.setPath("/");
