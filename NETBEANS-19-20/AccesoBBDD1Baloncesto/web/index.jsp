@@ -22,7 +22,7 @@
       Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "rootmysql");
       Statement s = conexion.createStatement();
 
-      ResultSet tuplas = s.executeQuery("Select * from socio'");
+      ResultSet tuplas = s.executeQuery("Select * from socio");
       
       out.println("<table border=1>");
       out.println("<tr><td>Nº de socio</td><td>Nombre del socio</td></tr>");
@@ -30,6 +30,7 @@
         out.print("<tr>");
         out.print("<td align=center>"+tuplas.getString("socioID") + "</td><td>" + tuplas.getString("nombre") + "</td>");
         out.println("</tr>"); 
+
       }
       out.println("</table>");
       
