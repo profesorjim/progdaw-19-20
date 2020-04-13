@@ -1,0 +1,1 @@
+Este conector es útil para el IDE NetBeans 11.3
