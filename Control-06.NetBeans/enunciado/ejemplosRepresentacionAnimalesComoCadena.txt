@@ -1,0 +1,13 @@
+Soy un mamífero.
+Me llamo: pepito
+Soy de la especie: mono
+Peso: 12.3 Kg
+Estoy en la jaula: 1
+
+Soy un ave.
+Me llamo: pepita
+Soy de la especie: aguila
+Peso: 8.0 Kg
+Estoy en la jaula: 2
+Mi color de plumas es: azul
+Mi altura máxima de vuelo es: 300.0
