@@ -23,6 +23,11 @@ public class Ave extends Animal {
     System.out.println(this.toString());
   }
   
+ public void MuestrateComoCadena2() {
+    System.out.println(this.toString());
+  }
+
+  
   @Override
   public String toString() {
     String resultado= "";
