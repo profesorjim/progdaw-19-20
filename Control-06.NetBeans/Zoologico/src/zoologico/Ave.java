@@ -22,10 +22,6 @@ public class Ave extends Animal {
   public void MuestrateComoCadena() {
     System.out.println(this.toString());
   }
-  
- public void MuestrateComoCadena2() {
-    System.out.println(this.toString());
-  }
 
   
   @Override
