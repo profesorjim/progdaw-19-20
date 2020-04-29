@@ -19,7 +19,7 @@
     <h1>Actualización de socio</h1>
     <%
       Class.forName("com.mysql.jdbc.Driver");
-      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "rootmysql");
+      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/clases_baloncesto","root", "");
       Statement s = conexion.createStatement();
       
       ResultSet tuplas = s.executeQuery("Select * from socio where socioID='"+request.getParameter("codigo") +"'");

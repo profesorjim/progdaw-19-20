@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.ResultSetMetaData"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
 <!DOCTYPE html>
@@ -24,10 +25,11 @@
     <h1>Selector de socios</h1>
     <%
       Class.forName("com.mysql.jdbc.Driver");
-      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "rootmysql");
+      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/clases_baloncesto","root", "");
       Statement s = conexion.createStatement();
 
       ResultSet tuplas = s.executeQuery("Select * from socio");
+    
     %>  
     <form action="loquesea.jsp" method="POST">
       Elija Socio: 
