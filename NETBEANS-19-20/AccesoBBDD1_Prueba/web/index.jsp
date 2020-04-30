@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.ResultSetMetaData"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
 <!DOCTYPE html>
@@ -24,6 +25,9 @@
 
       ResultSet tuplas = s.executeQuery("Select * from prueba1");
       
+      ResultSetMetaData x = tuplas.getMetaData();
+      
+      out.print(x.getColumnTypeName(3));
       
       
       out.println("<table border=1>");
