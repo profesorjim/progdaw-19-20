@@ -16,9 +16,11 @@ public class AccesoFicherosTexto2 {
   public static void main (String[] args) {
     try {
       BufferedWriter file2 = new BufferedWriter (new FileWriter("/home/tux/patata.txt"));
-      
+      /* Para añadir al final, lo siguiente:
+      BufferedWriter file2 = new BufferedWriter (new FileWriter("/home/tux/patata.txt",true));
+      */
       for (int i=1; i<=10;i++) {
-        file2.write(i+"\n");
+        file2.write((i*2)+"\r\n");
       }
       
       file2.close();
