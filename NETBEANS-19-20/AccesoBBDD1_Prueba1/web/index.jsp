@@ -18,10 +18,9 @@
   </head>
   <body>
     <h1>Listado de socios</h1>
+    <%@include file="codigoConexion.jsp"%>
     <%
-      Class.forName("com.mysql.jdbc.Driver");
-      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/clases_prueba","root", "");
-      Statement s = conexion.createStatement();
+
 
       ResultSet tuplas = s.executeQuery("Select * from prueba1");
       
@@ -41,7 +40,7 @@
       out.println("</table>");
       
       conexion.close();
-
+      
 
     %>
   </body>
