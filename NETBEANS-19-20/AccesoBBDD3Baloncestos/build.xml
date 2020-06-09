@@ -7,8 +7,8 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="AccesoBBDD3Baloncesto" default="default" basedir=".">
-    <description>Builds, tests, and runs the project AccesoBBDD3Baloncesto.</description>
+<project name="AccesoBBDD3Baloncestos" default="default" basedir=".">
+    <description>Builds, tests, and runs the project AccesoBBDD3Baloncestos.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
